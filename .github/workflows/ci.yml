@@ -1,6 +1,6 @@
 name: Run EDA Checks
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
