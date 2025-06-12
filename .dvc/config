@@ -1,0 +1,4 @@
+[core]
+    remote = localstorage
+['remote "localstorage"']
+    url = C:\Users\Bisrat\Desktop\KAIM\insurance_risk_analytics/local_dvc_storage
