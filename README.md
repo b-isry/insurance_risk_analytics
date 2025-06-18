@@ -5,6 +5,10 @@ This repository contains my analysis for AlphaCare Insurance Solutions focused o
 ## Project Structure
 
 - `notebooks/insurance_eda.ipynb`: Main notebook for EDA and visualization, with step-by-step explanations and plots.
+- `notebooks/modeling.ipynb`: Model training and comparison for claim severity prediction.
+- `notebooks/premium_prediction.ipynb`: Premium optimization and claim probability modeling.
+- `notebooks/model_explainability.ipynb`: Model explainability using SHAP.
+- `notebooks/hypothsis_testing.ipynb`: Statistical hypothesis testing on claims and margins.
 - `data/` – raw datasets (including `MachineLearningRating_v3.txt`)
 - `src/` – scripts for data processing and modeling
 - `.github/workflows/` – CI/CD configs
@@ -36,15 +40,16 @@ Ensure the file `MachineLearningRating_v3.txt` is present in the `data/` directo
 dvc pull data/MachineLearningRating_v3.txt.dvc
 ```
 
-### 4. Run the Notebook
+### 4. Run the Notebooks
 
-Open `notebooks/insurance_eda.ipynb` in VS Code or Jupyter and run the cells sequentially. Each code cell is preceded by a markdown explanation.
+Open any notebook in the `notebooks/` directory in VS Code or Jupyter and run the cells sequentially. Each code cell is preceded by a markdown explanation.
 
 ## Key Objectives
 
 - Explore claim risks by region, car type, and gender
 - Identify low-risk customer profiles
 - Build predictive models for optimal premium pricing
+- Explain model predictions and test business hypotheses
 
 ## Features
 
@@ -55,6 +60,10 @@ Open `notebooks/insurance_eda.ipynb` in VS Code or Jupyter and run the cells seq
 - Loss ratio analysis by province, gender, and vehicle type
 - Outlier detection
 - Monthly trend analysis
+- Predictive modeling (Random Forest, XGBoost, Linear Regression)
+- Premium optimization
+- Model explainability (SHAP)
+- Statistical hypothesis testing (chi-squared, t-test, ANOVA)
 
 ## Requirements
 
@@ -62,6 +71,9 @@ Open `notebooks/insurance_eda.ipynb` in VS Code or Jupyter and run the cells seq
 - pandas
 - seaborn
 - matplotlib
+- scikit-learn
+- xgboost
+- shap
 - (Optional) dvc
 
 Install all dependencies with `pip install -r requirements.txt`.
